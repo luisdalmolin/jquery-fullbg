@@ -1,0 +1,118 @@
+<!--
+    Utilizado CSS do HTML5 Boilerplate <html5boilerplate.com>
+    Imagens de exemplo retiradas do site <wallbase.css>
+    Criado por Luís Dalmolin <luisdalmolin.com.br>
+-->
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery FullBG | jQuery plugins para imagens full size</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.fullbg/jquery.fullbg.css" type="text/css">
+</head>
+<body>
+    <section class="content">
+        <h1>jQuery FullBG</h1>
+        <h2>Plugin jQuery para imagens de fundo full size.</h2>
+
+        <p>Imagens retiradas do site <a href="http://wallbase.cc" target="_blank">Wallbase.cc</a>.</p>
+
+        <h3>Como usar</h3>
+<pre>
+&lt;div class=&quot;full-bg&quot; id=&quot;full-bg&quot;&gt;
+    &lt;img src=&quot;img/bg-1.jpg&quot; class=&quot;full-bg-img&quot; /&gt;
+    &lt;img src=&quot;img/bg-2.jpg&quot; class=&quot;full-bg-img full-bg-img-hidden&quot; /&gt;
+    &lt;img src=&quot;img/bg-3.jpg&quot; class=&quot;full-bg-img full-bg-img-hidden&quot; /&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    $(function() {
+        $('.full-bg').fullBG();
+    });
+&lt;/script&gt;
+</pre>
+
+        <h3>Opções</h3>
+        <table>
+            <tr>
+                <th>Opção</th>
+                <th>Default</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>$img</td>
+                <td>.full-bg-img</td>
+                <td>Classe das imagens</td>
+            </tr>
+            <tr>
+                <td>$nav</td>
+                <td>.full-bg-nav</td>
+                <td>Classe da div de navegação</td>
+            </tr>
+            <tr>
+                <td>$navItem</td>
+                <td>.full-bg-nav-item</td>
+                <td>Classe do elemento da navegação</td>
+            </tr>
+            <tr>
+                <td>imageWidth</td>
+                <td>1500</td>
+                <td>Largura das imagens (em pixels)</td>
+            </tr>
+            <tr>
+                <td>imageHeight</td>
+                <td>750</td>
+                <td>Altura das imagens (em pixels)</td>
+            </tr>
+            <tr>
+                <td>transition</td>
+                <td>true</td>
+                <td>Se deseja que as imagens fiquem trocando automáticamente</td>
+            </tr>
+            <tr>
+                <td>delay</td>
+                <td>5000</td>
+                <td>Tempo para as imagens trocarem</td>
+            </tr>
+            <tr>
+                <td>speed</td>
+                <td>500</td>
+                <td>Velocidade da transição (fade)</td>
+            </tr>
+            <tr>
+                <td>imgAtual</td>
+                <td>1</td>
+                <td>Imagem que começar</td>
+            </tr>
+            <tr>
+                <td>nav</td>
+                <td>true</td>
+                <td>Se deseja utilizar a navegação entre as imagens</td>
+            </tr>
+            <tr>
+                <td>onWindowChange</td>
+                <td>null</td>
+                <td>Pode se passar uma função para ser executada no resize da janela.</td>
+            </tr>
+        </table>
+
+        <a class="by" href="http://luisdalmolin.com.br" title="Criado por Luís Dalmolin">By Luís Dalmolin</a>
+    </section>
+
+    <div class="full-bg" id="full-bg">
+        <img src="img/bg-1.jpg" alt="" class="full-bg-img" />
+        <img src="img/bg-2.jpg" alt="" class="full-bg-img full-bg-img-hidden" />
+        <img src="img/bg-3.jpg" alt="" class="full-bg-img full-bg-img-hidden" />
+    </div><!-- .full-bg --> 
+
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.fullbg/jquery.fullbg.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.full-bg').fullBG();
+        });
+    </script>
+</body>
+</html>

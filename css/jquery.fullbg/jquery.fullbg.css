@@ -1,0 +1,44 @@
+/*
+ *  Project: jQuery FullBG
+ *  Description: Plugin JS para criar um BG full size e auto ajustável conforme resoluções
+ *  Author: Luís Dalmolin <luis@escape.ppg.br> 
+ *  License: MIT 
+ *  Version: 1.0
+ */
+
+.full-bg {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .full-bg .full-bg-img {
+        position: absolute;
+        left: 0;
+        top: 0; }
+    .full-bg .full-bg-img-hidden {
+        display: none; }
+
+    /* full bg nav */ 
+    .full-bg-nav {
+        position: fixed;
+        z-index: 3;
+        top: 10px;
+        left: 10px;
+        padding: 0;
+        margin: 0; }
+        .full-bg-nav li {
+            margin: 0;
+            padding: 0;
+            float: left; }
+            .full-bg-nav li a {
+                display: block;
+                width: 14px;
+                height: 14px;
+                margin: 0 5px 0 0;
+                text-indent: -99999px;
+                background-position: left bottom;
+                background-image: url(../../img/jquery.fullbg/fullbg-nav.png); }
+                .full-bg-nav li a:hover, .full-bg-nav li .full-bg-nav-active {
+                    background-position: left top; }
